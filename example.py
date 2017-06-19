@@ -13,33 +13,26 @@ from instabot import InstaBot
 from unfollow_protocol import unfollow_protocol
 
 bot = InstaBot(
-    login="username",
+    login="walkthosedoggos",
     password="password",
-    like_per_day=1000,
+    like_per_day=300,
     comments_per_day=0,
-    tag_list=['follow4follow', 'f4f', 'cute'],
-    tag_blacklist=['rain', 'thunderstorm'],
+    tag_list=['adoptdontshop', 'shelterdogsrock', 'dogsofinstagram', 'doggos', 'pitties', 'pibbles', 'oneluckypup', 'adoptme', 'adoptaseniordog', 'pitbullsofinstagram'],
+    tag_blacklist=['rain'],
     user_blacklist={},
-    max_like_for_one_tag=50,
-    follow_per_day=300,
+    max_like_for_one_tag=20,
+    follow_per_day=10,
     follow_time=1 * 60,
-    unfollow_per_day=300,
+    unfollow_per_day=100,
     unfollow_break_min=15,
     unfollow_break_max=30,
     log_mod=0,
     proxy='',
     # List of list of words, each of which will be used to generate comment
     # For example: "This shot feels wow!"
-    comment_list=[["this", "the", "your"],
-                  ["photo", "picture", "pic", "shot", "snapshot"],
-                  ["is", "looks", "feels", "is really"],
-                  ["great", "super", "good", "very good", "good", "wow",
-                   "WOW", "cool", "GREAT","magnificent", "magical",
-                   "very cool", "stylish", "beautiful", "so beautiful",
-                   "so stylish", "so professional", "lovely",
-                   "so lovely", "very lovely", "glorious","so glorious",
-                   "very glorious", "adorable", "excellent", "amazing"],
-                  [".", "..", "...", "!", "!!", "!!!"]],
+    comment_list=[["Good", "Great", "Wonderful", "Awesome", "A Very Good"],
+                  ["dog", "doggo", "pupper", "pup"],
+                  [".", "!"]],
     # Use unwanted_username_list to block usernames containing a string
     ## Will do partial matches; i.e. 'mozart' will block 'legend_mozart'
     ### 'free_followers' will be blocked because it contains 'free'
@@ -52,7 +45,7 @@ bot = InstaBot(
         'beauty', 'express', 'kredit', 'collection', 'impor', 'preloved',
         'follow', 'follower', 'gain', '.id', '_id', 'bags'
     ],
-    unfollow_whitelist=['example_user_1', 'example_user_2'])
+    unfollow_whitelist=['aliowenswriter', 'silverballpaul', 'pmcmetalworks'])
 while True:
 
     #print("# MODE 0 = ORIGINAL MODE BY LEVPASHA")
